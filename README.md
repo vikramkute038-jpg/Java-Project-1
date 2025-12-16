@@ -1,12 +1,12 @@
-🚆 Railway Ticket Booking System (Java + MySQL)
-📌 Project Description
+# Railway Ticket Booking System (Java + MySQL)
+ #Project Description
 
 The Railway Ticket Booking System is a console-based Java application developed to manage train details and railway ticket booking operations.
 This system allows users to view available trains, book tickets, cancel tickets, and view booked tickets using a MySQL database for data storage.
 
 The project demonstrates the use of Core Java, JDBC, and MySQL in building a real-world database-driven application.
 
-🎯 Objectives
+# Objectives
 
 To understand Java database connectivity (JDBC)
 
@@ -34,7 +34,7 @@ SQL Queries
 
 Transactions
 
-✨ Features
+# Features
 
 View available trains
 
@@ -48,13 +48,13 @@ Automatic seat count update
 
 Secure database transactions
 
-📂 Project Structure
+# Project Structure
 Railway-Ticket-Booking-System
 │
 ├── RailwaySystem.java
 ├── README.md
 
-🗄️ Database Details
+# Database Details
 
 Database Name: railway_station
 
@@ -70,8 +70,8 @@ Creates tables if not available
 
 Inserts default train records on first run
 
-⚙️ How to Run the Project
-1️⃣ Prerequisites
+# How to Run the Project
+1️ Prerequisites
 
 Java JDK installed
 
@@ -79,7 +79,7 @@ MySQL Server installed
 
 MySQL Connector/J (JDBC Driver)
 
-2️⃣ Database Setup
+2️ Database Setup
 CREATE DATABASE railway_station;
 
 
@@ -89,7 +89,7 @@ static final String DB_URL = "jdbc:mysql://localhost:3306/railway_station";
 static final String USER = "root";
 static final String PASS = "your_password";
 
-3️⃣ Compile & Run
+3️ Compile & Run
 javac RailwaySystem.java
 java RailwaySystem
 
@@ -101,12 +101,12 @@ java RailwaySystem
 4. View Booked Tickets
 5. Exit
 
-🔐 Important Note
+#Important Note
 
-⚠️ Do not upload real database passwords to GitHub.
+ Do not upload real database passwords to GitHub.
 Use environment variables or remove credentials before public upload.
 
-📚 Learning Outcomes
+# Learning Outcomes
 
 Hands-on experience with Java & MySQL
 
@@ -116,7 +116,7 @@ Real-world ticket booking workflow
 
 Improved problem-solving skills
 
-👨‍🎓 Author
+## Author
 
 Name: Vikram Vishwanath Kute
 Course: B.Tech (Computer Science Engineering)
