@@ -1,0 +1,78 @@
+create database railway_station;
+use railway_station;
+CREATE TABLE trains (
+    train_no INT PRIMARY KEY, 
+    name VARCHAR(100), 
+    source VARCHAR(50), 
+    destination VARCHAR(50), 
+    seats INT, 
+    fare DOUBLE
+);
+
+INSERT INTO trains (train_no, name, source, destination, seats, fare) VALUES 
+-- Block 1: Express and Superfast Trains (Train Nos 1000 - 1019)
+(1001, 'Ganga Kaveri Express', 'Chennai', 'Patna', 55, 1450.00),
+(1002, 'Tamil Nadu Express', 'New Delhi', 'Chennai', 65, 1850.00),
+(1003, 'Kerala Express', 'New Delhi', 'Thiruvananthapuram', 70, 2100.00),
+(1004, 'Poorva Express', 'Howrah', 'New Delhi', 50, 1600.00),
+(1005, 'Konkan Express', 'Mumbai', 'Goa', 80, 780.00),
+(1006, 'Deccan Queen', 'Pune', 'Mumbai', 45, 350.00),
+(1007, 'Mumbai Mail', 'Mumbai', 'Kolkata', 90, 1750.00),
+(1008, 'Himalayan Queen', 'Chandigarh', 'Shimla', 40, 520.00),
+(1009, 'Godavari Express', 'Hyderabad', 'Visakhapatnam', 75, 990.00),
+(1010, 'Shatabdi Deluxe', 'Delhi', 'Lucknow', 35, 1150.00),
+(1011, 'Vande Bharat Exp', 'Mumbai', 'Ahmedabad', 50, 2200.00),
+(1012, 'Tejas Express', 'Mumbai', 'Goa', 60, 1550.00),
+(1013, 'Duronto Sleeper', 'Kolkata', 'Mumbai', 85, 1950.00),
+(1014, 'Rajdhani AC', 'Delhi', 'Kolkata', 45, 3000.00),
+(1015, 'Andhra Pradesh Exp', 'Hyderabad', 'Delhi', 70, 1700.00),
+(1016, 'Karnataka Express', 'Bengaluru', 'Delhi', 65, 1900.00),
+(1017, 'Bandra Terminus Exp', 'Mumbai', 'Jaipur', 75, 1300.00),
+(1018, 'Mahamana Express', 'Varanasi', 'New Delhi', 55, 950.00),
+(1019, 'Sapt Kranti Express', 'Patna', 'Delhi', 95, 1500.00),
+(1020, 'Ganga Jamuna Exp', 'Surat', 'Varanasi', 88, 1100.00),
+
+
+(1021, 'Lal Bagh Express', 'Bengaluru', 'Chennai', 80, 420.00),
+(1022, 'CST Passenger', 'Mumbai', 'Pune', 120, 150.00),
+(1023, 'Secunderabad Exp', 'Secunderabad', 'Tirupati', 90, 680.00),
+(1024, 'Malabar Express', 'Mangaluru', 'Thiruvananthapuram', 100, 550.00),
+(1025, 'Punjab Mail', 'Mumbai', 'Firozpur', 78, 1850.00),
+(1026, 'Howrah Mail', 'Mumbai', 'Howrah', 62, 1990.00),
+(1027, 'Gujarat Mail', 'Mumbai', 'Ahmedabad', 53, 900.00),
+(1028, 'Avadh Express', 'Gorakhpur', 'Bandra', 85, 1650.00),
+(1029, 'Intercity Exp', 'Patna', 'Ranchi', 40, 400.00),
+(1030, 'Varanasi Exp', 'Lucknow', 'Varanasi', 70, 300.00),
+(1031, 'Ajanta Express', 'Secunderabad', 'Manmad', 55, 750.00),
+(1032, 'Vaigai Express', 'Madurai', 'Chennai', 60, 480.00),
+(1033, 'Kushinagar Exp', 'LTT', 'Gorakhpur', 95, 1400.00),
+(1034, 'Mandovi Express', 'Mumbai', 'Madgaon', 70, 850.00),
+(1035, 'Jan Shatabdi', 'Mumbai', 'Latur', 50, 650.00),
+(1036, 'Hussain Sagar Exp', 'Hyderabad', 'Mumbai', 80, 900.00),
+(1037, 'Jodhpur Express', 'Jodhpur', 'Indore', 65, 1100.00),
+(1038, 'Kamayani Express', 'LTT', 'Varanasi', 90, 1350.00),
+(1039, 'Pushpak Express', 'Lucknow', 'Mumbai', 75, 1420.00),
+(1040, 'Mahananda Express', 'New Delhi', 'Alipurduar', 88, 2050.00),
+
+
+(1041, 'Amarnath Exp', 'Jammu', 'Guwahati', 45, 2500.00),
+(1042, ' Vivek Express', 'Dibrugarh', 'Kanyakumari', 50, 4200.00),
+(1043, 'Gomti Express', 'Lucknow', 'New Delhi', 60, 750.00),
+(1044, 'Intercity AC', 'Pune', 'Solapur', 30, 450.00),
+(1045, 'Awadh Assam Exp', 'LTT', 'Guwahati', 90, 2400.00),
+(1046, 'Falaknuma Exp', 'Secunderabad', 'Howrah', 70, 1600.00),
+(1047, 'Charminar Exp', 'Hyderabad', 'Chennai', 85, 950.00),
+(1048, 'Brindavan Exp', 'Chennai', 'Bengaluru', 55, 380.00),
+(1049, 'Swarna Jayanti Exp', 'Mumbai', 'Ahmedabad', 75, 1100.00),
+(1050, 'Navjeevan Express', 'Chennai', 'Ahmedabad', 65, 1550.00),
+(1051, 'Kashi Vishwanath Exp', 'Varanasi', 'Delhi', 80, 990.00),
+(1052, 'Shivalik Express', 'Kalka', 'Shimla', 40, 650.00),
+(1053, 'Island Express', 'Kanyakumari', 'Bengaluru', 70, 1200.00),
+(1054, 'Dozen Express', 'Mumbai', 'Indore', 95, 1150.00),
+(1055, 'Ganga Exp', 'Patna', 'Delhi', 80, 1500.00),
+(1056, 'Sagar Express', 'Visakhapatnam', 'Secunderabad', 60, 850.00),
+(1057, 'Holi Express', 'Bhopal', 'Pune', 70, 1050.00),
+(1058, 'Fast Passenger', 'Agra', 'Delhi', 110, 200.00),
+(1059, 'Superfast King', 'Mumbai', 'Nagpur', 45, 1250.00),
+(1060, 'Coastal Express', 'Goa', 'Mangaluru', 65, 450.00);
+select * from trains;
